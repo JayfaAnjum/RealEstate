@@ -36,6 +36,8 @@ function App() {
 }
 
 export default App
+
+
 //here we console ninja for see console output in vscode instead of web browser
 
 //es7 has lot of features
@@ -43,3 +45,11 @@ export default App
 // tailwindcss intellisense
 
 //prettier
+
+//npm init -y for getting package.json
+
+//type:"module" then only it used es6 instead of common js
+
+//dev is not special command so we need to add npm run 
+
+//start is a specail command so we need to add start here
