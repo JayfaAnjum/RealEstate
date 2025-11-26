@@ -53,3 +53,11 @@ export default App
 //dev is not special command so we need to add npm run 
 
 //start is a specail command so we need to add start here
+
+//.env files should be in the root folder because it contain mostly global variable
+
+//if we use export const sigup we need to import is as it is 
+//but if we use export default signup we can import with any name 
+
+// we can create user two method .create is shortcut and we can use new user and save method we can use it 
+//for hasing password validating the keys 
