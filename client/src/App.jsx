@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp'
 import Profile from './pages/Profile'
 import Home from './pages/Home'
 import Header from './components/Header'
-
+import { Toaster } from 'sonner';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
   
    <BrowserRouter>
    <Header />
+    <Toaster position="top-right" richColors />
    <Routes>
     <Route path="/about" element={<About/>} />
    
@@ -25,6 +26,7 @@ function App() {
   
   
     <Route path="/Signup" element={<SignUp/>} />
+   
    
    
     <Route path="/profile" element={<Profile/>} />

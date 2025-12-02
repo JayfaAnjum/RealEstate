@@ -3,11 +3,18 @@ import connectDatabase from './config/connectDatabase.js';
 import dotenv from 'dotenv';
 import authRoute from './routes/authRoutes.js'
 
+import cors from 'cors';
+
 dotenv.config();
 
 const app = express();
 
 connectDatabase()
+app.use(cors({
+
+    origin: "http://localhost:5173",
+  credentials: true,   
+}));
 app.use(express.json());
 
 app.use('/api/auth',authRoute);
